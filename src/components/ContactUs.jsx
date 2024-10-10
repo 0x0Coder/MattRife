@@ -29,7 +29,7 @@ const ContactUs = () => {
         alert("Email sent successfully!");
       })
       .catch((error) => {
-        console.error("Error sending email", error);
+        console.error("Error sending email", error.response.data);
       });
   };
 
