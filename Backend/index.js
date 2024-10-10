@@ -11,23 +11,30 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Email sending route
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
 app.post('/send-email', async (req, res) => {
   const { fullName, email, subject, message } = req.body;
 
-  // Create transporter using SMTP server (e.g., Gmail)
+  console.log('Sending email to:', process.env.RECEIVER_EMAIL); // Check the receiver's email
+  console.log('Using email:', process.env.EMAIL); // Check your email
+  console.log('Password set:', !!process.env.PASSWORD); // Check if the password is set
+
   let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: process.env.EMAIL, // Your email address
-      pass: process.env.PASSWORD, // Your email password or app-specific password
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
   });
 
-  // Email content
   const mailOptions = {
-    from: email, // Sender's email address (user filling the form)
-    to: process.env.RECEIVER_EMAIL, // Your email address
+    from: email,
+    to: process.env.RECEIVER_EMAIL,
     subject: `Contact Form Submission: ${subject}`,
     text: `
       You have a new contact form submission from:
@@ -37,16 +44,12 @@ app.post('/send-email', async (req, res) => {
     `,
   };
 
-  // Send email
   try {
     await transporter.sendMail(mailOptions);
     res.status(200).send({ message: 'Email sent successfully!' });
   } catch (error) {
+    console.error('Error sending email', error);  // Log the error to see more details
     res.status(500).send({ message: 'Error sending email', error });
   }
 });
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
