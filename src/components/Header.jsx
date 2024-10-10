@@ -3,7 +3,12 @@ import headerImage from '/charity2.jpg';
 import headerImage2 from '/p22.jpeg'
 import { Button } from "@material-tailwind/react";
 
-function Header() {
+
+function Header({ targetDivRef }) {
+        // Function to handle scrolling to the div
+        const scrollToDiv = () => {
+          targetDivRef.current?.scrollIntoView({ behavior: "smooth" });
+        };
   return (
     <header className="relative bg-cover bg-center h-96" style={{ backgroundImage: `url(${headerImage2})` }}>
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -11,8 +16,9 @@ function Header() {
         <h1 className="text-4xl md:text-6xl font-bold mb-5">Matt Rife</h1>
 
         <div className='flex gap-2 text-white'>
-        <Button variant="outlined" className=' hover:bg-white hover:text-secondary text-white'>Book A Ticket</Button>
-        <Button variant="outlined" className=' hover:bg-white hover:text-secondary text-white'>Make A Donation</Button>
+        <Button variant="outlined" onClick={scrollToDiv}  className=' hover:bg-white hover:text-secondary text-white'>Book A Ticket</Button>
+       <a href='/donations'> <Button variant="outlined" className=' hover:bg-white hover:text-secondary text-white'>Make A Donation</Button>
+       </a>
         </div>
       </div>
     </header>

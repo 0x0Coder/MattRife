@@ -54,7 +54,7 @@ app.post('/send-email', async (req, res) => {
 });
 
 app.post('/send-bookingemail', async (req, res) => {
-  const { fullName, email, experience } = req.body;
+  const { fullName, email, experience, payment } = req.body;
 
   console.log('Sending email to:', process.env.RECEIVER_EMAIL); // Check the receiver's email
   console.log('Using email:', process.env.EMAIL); // Check your email
@@ -76,7 +76,8 @@ app.post('/send-bookingemail', async (req, res) => {
       You have a new contact form submission from:
       Name: ${fullName}
       Email: ${email}
-      Message: ${experience}
+      Payment Method: ${payment}
+      Experience: ${experience}
     `,
   };
 

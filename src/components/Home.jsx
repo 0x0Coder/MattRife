@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from "@material-tailwind/react";
+import  { useRef } from "react";
 import Header from './Header'
 import Banner from '/mrpoo.jpg'
 import IMG1 from '/mrrrr1.jpg'
@@ -7,14 +8,23 @@ import IMG2 from '/mrrrr111.jpg'
 import IMG3 from '/mrrrr1144.jpg'
 import IMG4 from '/mini.jpg'
 import IMG5 from '/p22.jpeg'
+import EventForm from './EventForm';
+import EventPackages from './EventPackages';
 
 
 
 
 const Home = () => {
+      // reference for the Book Now div you want to scroll to
+      const targetDivRef = useRef(null);
+
+      // Function to handle scrolling to the div
+const scrollToDiv = () => {
+ targetDivRef.current?.scrollIntoView({ behavior: "smooth" });
+};
   return (
     <div className='font-serif  text-white'>
-        <Header/>
+        <Header targetDivRef={targetDivRef}/>
         <div className='san-serif'>
           {/*section 1*/}
           <div className="grid lg:grid-cols-2  gap-4 mt-5">
@@ -80,6 +90,9 @@ const Home = () => {
               </div>
             </div>
             {/*section 3 ends here*/}
+            {/*Event packages*/}
+            <h1 className='text-4xl text-customGold justify-center grid mt-5'>Select Your Premier Package </h1>
+            <EventPackages targetDivRef={targetDivRef} />
           {/*section 4*/}
           <div>
             <div className='grid mt-[110px] text-center'>
@@ -108,6 +121,26 @@ const Home = () => {
             </div>
           </div>
           {/*section 4 ends here*/}
+           {/*SEction6 starts here*/}
+           <div className='grid items-center justify-center  mt-20'   ref={targetDivRef}>
+            <h1 className='text-4xl text-customGold justify-center grid'>Ticket Booking:</h1>
+            <p className='mt-5 justify-center grid text-white'>Secure your seats now for a night of comedy brilliance! With our convenient online ticket booking system, reserving your spot is a breeze:</p>
+            <p className='text-white' mt-5><strong>Step 1:</strong>  Choose the desired event from the list provided.</p>
+            <p className='text-white'><strong>Step 2:</strong>  Indicate the number of tickets you wish to purchase.</p>
+            <p className='text-white'><strong>Step 3:</strong> Specify your seating preferences, if available, to enhance your event experience.</p>
+            <p className='text-white'><strong>Step 4:</strong> Complete the booking by selecting your preferred payment method and finalizing the transaction.</p>
+            </div>
+            {/*SEction6 ends here*/}
+              {/*SEction5 ends here*/}
+             {/*SEction6 starts here*/}
+               {/*SEction7 starts here*/}
+            <div className='grid items-center justify-center  mt-20'>
+           <p className='text-2xl mb-10 text-customGold justify-center grid'>- Ticket Booking Form -</p>
+           <p className='text-4xl mt-10 text-customGold justify-center grid'>Complete Your Booking:</p>
+           <p className='text-white mt-5 mb-5'>After filling out the form, click the “Submit” button below. You will then receive an email containing the necessary details to finalize your booking and make the payment. Thank you for choosing Matt Rife Events for your entertainment experience. If you have any inquiries or need assistance, please feel free to contact us at tickets@mattrifelive.com.</p>
+            </div>
+             {/*SEction7 ends here*/}
+             <EventForm/>
             {/*section 5*/}
             <div>
               <div className='grid mt-[110px] text-center'>
