@@ -53,3 +53,39 @@ app.post('/send-email', async (req, res) => {
   }
 });
 
+app.post('/send-bookingemail', async (req, res) => {
+  const { fullName, email, experience } = req.body;
+
+  console.log('Sending email to:', process.env.RECEIVER_EMAIL); // Check the receiver's email
+  console.log('Using email:', process.env.EMAIL); // Check your email
+  console.log('Password set:', !!process.env.PASSWORD); // Check if the password is set
+
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
+    },
+  });
+
+  const mailOptions = {
+    from: email,
+    to: process.env.RECEIVER_EMAIL,
+    subject: `Event Booking Form Submission:`,
+    text: `
+      You have a new contact form submission from:
+      Name: ${fullName}
+      Email: ${email}
+      Message: ${experience}
+    `,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    res.status(200).send({ message: 'Email sent successfully!' });
+  } catch (error) {
+    console.error('Error sending email', error);  // Log the error to see more details
+    res.status(500).send({ message: 'Error sending email', error });
+  }
+});
+

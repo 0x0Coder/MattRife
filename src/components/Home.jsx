@@ -6,6 +6,7 @@ import IMG1 from '/mrrrr1.jpg'
 import IMG2 from '/mrrrr111.jpg'
 import IMG3 from '/mrrrr1144.jpg'
 import IMG4 from '/mini.jpg'
+import IMG5 from '/p22.jpeg'
 
 
 

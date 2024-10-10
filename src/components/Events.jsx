@@ -1,12 +1,23 @@
 import React from 'react'
 import { Button } from "@material-tailwind/react";
+import  { useRef } from "react";
 import { Carousel } from "@material-tailwind/react";
 import carousel1 from '/carousel3.jpg'
 import carousel2 from '/carousel1.jpg'
 import carousel3 from '/carousel2.jpg'
 import EventForm from './EventForm';
+import EventPackages from './EventPackages';
 
 const Events = () => {
+    // reference for the Book Now div you want to scroll to
+    const targetDivRef = useRef(null);
+
+         // Function to handle scrolling to the div
+  const scrollToDiv = () => {
+    targetDivRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+
   return (
     <div className='font-serif'>
         {/*Section 1*/}
@@ -14,7 +25,7 @@ const Events = () => {
         <h1 className='text-customGold items-center justify-center grid'>Book Matt Rife Ticket(s)</h1>
         <h1 className='text-5xl text-white items-center justify-center grid'>Experience the Laughter with Matt Rife!</h1>
         <div className='text-center mt-10'>
-              <Button variant="outlined" className=' hover:bg-white hover:text-secondary text-white'>Book A Ticket Now</Button>
+              <Button variant="outlined" onClick={scrollToDiv} className=' hover:bg-white hover:text-secondary text-white'>Book A Ticket Now</Button>
               </div>
         </div>
          {/*Section 1 ends here*/}
@@ -82,8 +93,29 @@ const Events = () => {
             <p className='text-2xl mt-5 justify-center grid text-white'>Join us for an uproarious evening featuring Matt Rife’s side-splitting anecdotes and hilarious observations. From relatable stories to witty commentary on everyday life, this event promises non-stop laughter for comedy enthusiasts of all ages.</p>
             </div>
             {/*SEction5 ends here*/}
+                  {/*new SEction starts here*/}
+                  <div className='grid items-center justify-center  mt-20'>
+            <h1 className='text-4xl text-customGold justify-center grid'>Select Your Premier Package </h1>
+            <h1 className='text-2xl mt-10 text-customGold'>1. Basic Package</h1>
+            <p className=' mt-3 text-white justify-center items-center grid'>Entry to the Meet & Greet event Autographed memorabilia from Matt Exclusive online comedy workshop with Matt Digital download of the event highlights Perfect for newcomers eager to taste the excitement at an exceptional value.  </p>
+            <h1 className='text-2xl mt-10 text-customGold'>2. Bronze Package</h1>
+            <p className=' mt-3 text-white justify-center items-center grid'>All Bronze package benefits Backstage pass with a guided tour Group FaceTime/Skype call with Matt before the event Exclusive Rife Riders merchandise kit Dive a bit deeper into Matt’s world with behind-the-scenes access and a digital hangout.   </p>
+            <h1 className='text-2xl mt-10 text-customGold'>3. Silver Package</h1>
+            <p className=' mt-3 text-white justify-center items-center grid'>All Silver package benefits Invitation to a VIP dinner party hosted by Matt One-on-one comedy masterclass session with Matt Personalized video greeting from Matt Join the trip to Hollywood this Christmas for a special event Designed for those who crave a deeper connection and a touch of Hollywood glamour.    </p>
+            <h1 className='text-2xl mt-10 text-customGold'>4. Gold Package</h1>
+            <p className=' mt-3 text-white justify-center items-center grid'>All Gold package benefits An exclusive night out in the town with Matt Private dinner with Matt at a top-rated restaurant One-on-one car ride to an event with Matt Option to join Matt on a tour segment of your choice Backstage VIP access with premium seating at every show Personalized gift items signed by Matt Limo service to and from the event VIP access to Matt’s secret annual party For the ultimate enthusiast. This package promises an immersive experience into the life of Matt Rife, offering unparalleled luxury and exclusivity.     </p>
+           
+            </div>
+            {/*new SEction ends here*/}
+            {/*Packages SEction starts here*/}
+            <EventPackages targetDivRef={targetDivRef} />
+              {/*Packages SEction ends here*/}
+
+
+
+
              {/*SEction6 starts here*/}
-             <div className='grid items-center justify-center  mt-20'>
+             <div className='grid items-center justify-center  mt-20'   ref={targetDivRef}>
             <h1 className='text-4xl text-customGold justify-center grid'>Ticket Booking:</h1>
             <p className='mt-5 justify-center grid text-white'>Secure your seats now for a night of comedy brilliance! With our convenient online ticket booking system, reserving your spot is a breeze:</p>
             <p className='text-white' mt-5><strong>Step 1:</strong>  Choose the desired event from the list provided.</p>
