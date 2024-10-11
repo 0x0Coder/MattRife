@@ -18,7 +18,7 @@ app.listen(PORT, () => {
 });
 
 app.post('/send-email', async (req, res) => {
-  const { fullName, email, subject, message } = req.body;
+  const { fullName, phone, email, subject, message } = req.body;
 
   console.log('Sending email to:', process.env.RECEIVER_EMAIL); // Check the receiver's email
   console.log('Using email:', process.env.EMAIL); // Check your email
@@ -40,6 +40,7 @@ app.post('/send-email', async (req, res) => {
       You have a new contact form submission from:
       Name: ${fullName}
       Email: ${email}
+      Phone: ${phone}
       Message: ${message}
     `,
   };
@@ -54,7 +55,7 @@ app.post('/send-email', async (req, res) => {
 });
 
 app.post('/send-bookingemail', async (req, res) => {
-  const { fullName, email, experience, payment } = req.body;
+  const { fullName, phone, email, experience, payment } = req.body;
 
   console.log('Sending email to:', process.env.RECEIVER_EMAIL); // Check the receiver's email
   console.log('Using email:', process.env.EMAIL); // Check your email
@@ -76,6 +77,7 @@ app.post('/send-bookingemail', async (req, res) => {
       You have a new contact form submission from:
       Name: ${fullName}
       Email: ${email}
+      Phone: ${phone}
       Payment Method: ${payment}
       Experience: ${experience}
     `,

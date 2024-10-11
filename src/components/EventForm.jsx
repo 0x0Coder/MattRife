@@ -18,6 +18,7 @@ const EventForm = () => {
   const handleOpen = () => setOpen(!open);
   const [formData, setFormData] = useState({
     fullName: '',
+    phone:'',
     email: '',
     experience: '',
     payment: '',
@@ -112,6 +113,20 @@ const EventForm = () => {
               placeholder="John Doe"
               name="fullName"
               value={formData.fullName}
+              onChange={handleChange}
+              className=" !border-t-blue-gray-200 focus:!border-t-white text-white"
+              labelProps={{
+                className: "before:content-none after:content-none",
+              }}
+            />
+              <Typography variant="h6" color="white" className="-mb-3">
+              Phone Number
+            </Typography>
+            <Input
+              size="lg"
+              placeholder="+1 943 433 443"
+              name="phone"
+              value={formData.phone}
               onChange={handleChange}
               className=" !border-t-blue-gray-200 focus:!border-t-white text-white"
               labelProps={{

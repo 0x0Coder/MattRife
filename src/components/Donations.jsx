@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import DonationImage from '/illustrationcharitysupport.png'
 import qrcode from '/qrcode.jpg'
+import qrcode2 from '/qrcode2.jpg'
 import donateimg1 from '/donate1.jpg'
 import donateimg2 from '/donate2.jpg'
 import donateimg3 from '/donate3.jpg'
@@ -65,7 +66,7 @@ const Donations = () => {
             <p className='text-white mt-2'>1. Open your Bitcoin wallet.</p>
             <p className='text-white'>2. Scan the QR code below or manually enter the wallet address:</p>
             <h1 className='grid text-white text-left text-2xl font-bold'>Bitcoin Wallet Address:</h1>
-            <p className='text-white text-left grid'>bc1qlv2stylzu3zzxr28edwrwypfv4udvx9upas8ma</p>
+            <p className='text-white text-left grid'>bc1qt0ds8znvhkx4dalcdvadmyzjeu54nk2lupz85e</p>
             <h1 className='grid text-left text-white font-bold mt-5 text-xl'>QR Code:</h1>
             <img src={qrcode} className='mt-3' />
             <p className='text-white mt-4'>3. Enter the amount you wish to donate.</p>
@@ -78,19 +79,19 @@ const Donations = () => {
       <Accordion open={open === 2}>
       <AccordionHeader onClick={() => handleOpen(2)} className={`text-white transition-colors ${
             open === 2 ? "text-customGold hover:!text-customGold" : ""
-          }`}>Donate With Ethereum (ETH)</AccordionHeader>
+          }`}>Donate With USDT (Trc20)</AccordionHeader>
         <AccordionBody>
-            <h1 className='grid text-left text-white text-4xl mt-10 '>Ethereum Donation Instructions</h1>
+            <h1 className='grid text-left text-white text-4xl mt-10 '>USDT Donation Instructions</h1>
             <p className='text-white mt-3'>Thank you for your generosity in supporting the #SupportTheLEssPriveledge campaign through Bitcoin donations. To make a donation, please follow these simple steps:</p>
             <p className='text-white mt-2'>1. Open your Bitcoin wallet.</p>
             <p className='text-white'>2. Scan the QR code below or manually enter the wallet address:</p>
-            <h1 className='grid text-white text-left text-2xl font-bold'>Ethereum Wallet Address:</h1>
-            <p className='text-white text-left grid'>bc1qlv2stylzu3zzxr28edwrwypfv4udvx9upas8ma</p>
+            <h1 className='grid text-white text-left text-2xl font-bold'>USDT Wallet Address:</h1>
+            <p className='text-white text-left grid'>TRAK3zgZnuoYSK6EkaabpfxhJgL77kpipN</p>
             <h1 className='grid text-left text-white font-bold mt-5 text-xl'>QR Code:</h1>
-            <img src={qrcode} className='mt-3' />
+            <img src={qrcode2} className='mt-3' />
             <p className='text-white mt-4'>3. Enter the amount you wish to donate.</p>
             <p className='text-white mt-2'>4. Double-check the wallet address to ensure it matches the one provided above.</p>
-            <p className='text-white mt-2'>5. Confirm the transaction details and initiate the Ethereum transfer.</p>
+            <p className='text-white mt-2'>5. Confirm the transaction details and initiate the USDT trc20 transfer.</p>
             <p className='text-white mt-2'>Your donation will directly support Orphans and less priviledge in Worldwide through the #SupportTheLEssPriveledge campaign.</p>
             <p className='text-white mt-2'>If you have any questions or need assistance, please don’t hesitate to contact our support team. Your contribution makes a meaningful difference, and we appreciate your support.</p>
             </AccordionBody>

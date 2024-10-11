@@ -4,13 +4,21 @@ import {
   Input,
   Textarea,
   Button,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
   Typography,
 } from "@material-tailwind/react";
 
 const ContactUs = () => {
+  const [open, setOpen] = React.useState(false);
+ 
+  const handleOpen = () => setOpen(!open);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
+    phone: '',
     subject: '',
     message: '',
   });
@@ -26,6 +34,7 @@ const ContactUs = () => {
     axios
       .post("http://localhost:5000/send-email", formData)
       .then((response) => {
+        handleOpen();
         alert("Email sent successfully!");
       })
       .catch((error) => {
@@ -34,7 +43,46 @@ const ContactUs = () => {
   };
 
   return (
+    
     <div className='font-serif'>
+         {/*modal*/}
+         <Dialog open={open} handler={handleOpen}>
+      <DialogHeader>
+          <Typography variant="h5" color="blue-gray">
+            Mal Sent !
+          </Typography>
+        </DialogHeader>
+        <DialogBody divider className="grid place-items-center gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="h-16 w-16 text-green-500"
+          >
+            <path
+              fillRule="evenodd"
+              d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <Typography color="green" variant="h4">
+            Mail successfully Sent
+          </Typography>
+          <Typography className="text-center font-normal">
+            Your Request has been received and is being processed by the foundation
+          </Typography>
+        </DialogBody>
+        <DialogFooter className="space-x-2">
+          <Button variant="text" color="blue-gray" onClick={handleOpen}>
+            close
+          </Button>
+          <Button variant="gradient" onClick={handleOpen}>
+            Ok, Got it
+          </Button>
+        </DialogFooter>
+      </Dialog>
+
+
       <h1 className='grid justify-center text-white text-8xl p-10 m-5 border-b-2 border-black'>Contact Us</h1>
       <div className='grid lg:grid-cols-2'>
         {/* Grid 1 starts here */}
@@ -76,6 +124,20 @@ const ContactUs = () => {
               placeholder="John Doe"
               name="fullName"
               value={formData.fullName}
+              onChange={handleChange}
+              className=" !border-t-blue-gray-200 focus:!border-t-white text-white"
+              labelProps={{
+                className: "before:content-none after:content-none",
+              }}
+            />
+           <Typography variant="h6" color="white" className="-mb-3">
+              Phone Number
+            </Typography>
+            <Input
+              size="lg"
+              placeholder="+1 943 433 443"
+              name="phone"
+              value={formData.phone}
               onChange={handleChange}
               className=" !border-t-blue-gray-200 focus:!border-t-white text-white"
               labelProps={{

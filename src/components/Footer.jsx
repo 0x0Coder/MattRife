@@ -22,7 +22,7 @@ const LINKS = [
 
 const Footer = () => {
   return (
-    <footer className="relative w-full bg-black">
+    <footer className="relative w-full bg-black ">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
          
