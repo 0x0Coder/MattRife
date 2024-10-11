@@ -6,6 +6,7 @@ import Layout from './components/Layout'; // Your layout component
 import Donations from './components/Donations';
 import Faq from './components/Faq';
 import ContactUs from './components/ContactUs';
+import Investment from './components/Investment';
 
 function App() {
  
@@ -20,7 +21,8 @@ function App() {
         <Route path='/events' element={<Events/>} />
         <Route path='/donations' element={<Donations/>} />
         <Route path='/faq' element={<Faq/>} />
-        <Route path='/contactus' element={<ContactUs/>} />
+        <Route path='/contact' element={<ContactUs/>} />
+        <Route path='/investment' element={<Investment/>} />
     
       </Route>
     </Routes>

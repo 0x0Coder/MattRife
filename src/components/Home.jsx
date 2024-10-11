@@ -65,28 +65,28 @@ const scrollToDiv = () => {
                 {/*grid 1*/}
                 <div>
                 
-                <h1 className='text-4xl text-customGold'>Oct 1 Sun • 5:00pm</h1>
+                <h1 className='text-4xl text-customGold'>Oct 20 • 5:00pm</h1>
                 <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
                 <p>Fox Performing Arts Center, Riverside, CA</p>
                 </div>
                 {/*grid 1*/}
                 {/*grid 2*/}
                 <div>
-                <h1 className='text-4xl text-customGold'>Oct 1 Sun • 5:00pm</h1>
+                <h1 className='text-4xl text-customGold'>Nov 1 • 5:00pm</h1>
                 <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
                 <p>Fox Performing Arts Center, Riverside, CA</p>
                 </div>
                 {/*grid 2*/}
                 {/*grid 3*/}
                 <div>
-                <h1 className='text-4xl text-customGold'>Oct 1 Sun • 5:00pm</h1>
+                <h1 className='text-4xl text-customGold'>Dec 1 • 5:00pm</h1>
                 <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
                 <p>Fox Performing Arts Center, Riverside, CA</p>
                 </div>
                   {/*grid 3*/}
               </div>
               <div className='text-center mt-10'>
-              <Button variant="outlined" className=' hover:bg-white hover:text-secondary text-white'>Find Your City</Button>
+              <Button variant="outlined" onClick={scrollToDiv} className=' hover:bg-white hover:text-secondary text-white'>Book Event</Button>
               </div>
             </div>
             {/*section 3 ends here*/}
