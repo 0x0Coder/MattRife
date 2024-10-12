@@ -140,6 +140,7 @@ const EventForm = () => {
               size="lg"
               placeholder="name@mail.com"
               name="email"
+              color='white'
               value={formData.email}
               onChange={handleChange}
               className=" !border-t-blue-gray-200 focus:!border-t-white text-white"
@@ -152,6 +153,7 @@ const EventForm = () => {
               label="Select Your Experience"
               onChange={handleExperienceChange}
               className='text-white'
+                color='white'
             >
               <Option value="Basic - $499.99">Basic - $499.99</Option>
               <Option value="Bronze (most popular) - $1,199.99">Bronze (most popular) - $1,199.99</Option>
@@ -163,6 +165,7 @@ const EventForm = () => {
               label="Select Payment Method"
               onChange={handlePaymentChange}
               className='text-white'
+                color="white"
             >
               <Option value="PayPal">PayPal</Option>
               <Option value="Venmo">Venmo</Option>

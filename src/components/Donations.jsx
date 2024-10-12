@@ -61,8 +61,9 @@ const Donations = () => {
             }`}>Donate With Bitcoin (BTC)
             </AccordionHeader>
             <AccordionBody>
-            <h1 className='grid text-left text-white text-4xl mt-10 '>Bitcoin Donation Instructions</h1>
-            <p className='text-white mt-3'>Thank you for your generosity in supporting the #SupportTheLEssPriveledge campaign through Bitcoin donations. To make a donation, please follow these simple steps:</p>
+            <h1 className='grid text-left text-white text-4xl mt-10 '>Support Our Orphanage Foundation</h1>
+        <p className='text-white mt-3'>Thank you for considering a donation to our orphanage foundation. Your generous support plays a vital role in transforming the lives of the children in our care, providing them with essential resources, education, and a nurturing environment.</p>
+        <h1 className='text-white mt-2 text-2xl'>How to Donate:</h1>
             <p className='text-white mt-2'>1. Open your Bitcoin wallet.</p>
             <p className='text-white'>2. Scan the QR code below or manually enter the wallet address:</p>
             <h1 className='grid text-white text-left text-2xl font-bold'>Bitcoin Wallet Address:</h1>
@@ -81,8 +82,9 @@ const Donations = () => {
             open === 2 ? "text-customGold hover:!text-customGold" : ""
           }`}>Donate With USDT (Trc20)</AccordionHeader>
         <AccordionBody>
-            <h1 className='grid text-left text-white text-4xl mt-10 '>USDT Donation Instructions</h1>
-            <p className='text-white mt-3'>Thank you for your generosity in supporting the #SupportTheLEssPriveledge campaign through Bitcoin donations. To make a donation, please follow these simple steps:</p>
+        <h1 className='grid text-left text-white text-4xl mt-10 '>Support Our Orphanage Foundation</h1>
+        <p className='text-white mt-3'>Thank you for considering a donation to our orphanage foundation. Your generous support plays a vital role in transforming the lives of the children in our care, providing them with essential resources, education, and a nurturing environment.</p>
+        <h1 className='text-white mt-2 text-2xl'>How to Donate:</h1>
             <p className='text-white mt-2'>1. Open your Metamask wallet Address.</p>
             <p className='text-white'>2. Scan the QR code below or manually enter the wallet address:</p>
             <h1 className='grid text-white text-left text-2xl font-bold'>USDT Wallet Address:</h1>
@@ -99,21 +101,18 @@ const Donations = () => {
       <Accordion open={open === 3}>
       <AccordionHeader onClick={() => handleOpen(3)} className={`text-white transition-colors ${
             open === 3 ? "text-customGold hover:!text-customGold" : ""
-          }`}>Donate With Others (Venmo,PayPAl,Zelle)</AccordionHeader>
+          }`}>Donate With Others (Venmo,PayPal,Zelle)</AccordionHeader>
         <AccordionBody>
-            <h1 className='grid text-left text-white text-4xl mt-10 '>USDT Donation Instructions</h1>
-            <p className='text-white mt-3'>Thank you for your generosity in supporting the #SupportTheLEssPriveledge campaign through Bitcoin donations. To make a donation, please follow these simple steps:</p>
-            <p className='text-white mt-2'>1. Open your Metamask wallet Address.</p>
-            <p className='text-white'>2. Scan the QR code below or manually enter the wallet address:</p>
-            <h1 className='grid text-white text-left text-2xl font-bold'>USDT Wallet Address:</h1>
-            <p className='text-white text-left grid'>TRAK3zgZnuoYSK6EkaabpfxhJgL77kpipN</p>
-            <h1 className='grid text-left text-white font-bold mt-5 text-xl'>QR Code:</h1>
-            <img src={qrcode2} className='mt-3' />
-            <p className='text-white mt-4'>3. Enter the amount you wish to donate.</p>
-            <p className='text-white mt-2'>4. Double-check the wallet address to ensure it matches the one provided above.</p>
-            <p className='text-white mt-2'>5. Confirm the transaction details and initiate the USDT trc20 transfer.</p>
-            <p className='text-white mt-2'>Your donation will directly support Orphans and less priviledge in Worldwide through the #SupportTheLEssPriveledge campaign.</p>
-            <p className='text-white mt-2'>If you have any questions or need assistance, please don’t hesitate to contact our support team. Your contribution makes a meaningful difference, and we appreciate your support.</p>
+            <h1 className='grid text-left text-white text-4xl mt-10 '>Support Our Orphanage Foundation</h1>
+            <p className='text-white mt-3'>Thank you for considering a donation to our orphanage foundation. Your generous support plays a vital role in transforming the lives of the children in our care, providing them with essential resources, education, and a nurturing environment.</p>
+            <h1 className='text-white mt-2 text-2xl'>How to Donate:</h1>
+            <p className='text-white'>To contribute, please reach out to our foundation to request our payment details. We accept donations via:</p>
+            <h1 className='grid text-white text-left text-2xl mt-5 font-bold'>Venmo</h1>
+            <h1 className='grid text-white text-left text-2xl font-bold'>Cash App</h1>
+            <h1 className='grid text-white text-left text-2xl font-bold'>PayPal</h1>
+            <p className='grid mt-5 text-white text-left text-xl font-bold'>For payment information, please contact us at: mattrifeliveassistant@gmail.com.</p>
+            <p className='grid mt-2 text-white text-left  font-bold'>Every contribution, no matter the amount, makes a meaningful impact. We are incredibly grateful for your generosity and commitment to improving the lives of the children we serve.</p>
+            <h1 className='mt-2 font-bold text-customGold text-4xl'>Thank you for your support!</h1>
             </AccordionBody>
       </Accordion>
       
