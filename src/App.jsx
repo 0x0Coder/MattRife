@@ -7,6 +7,7 @@ import Donations from './components/Donations';
 import Faq from './components/Faq';
 import ContactUs from './components/ContactUs';
 import Investment from './components/Investment';
+import SmartsuppChat from './components/SmartsuppChat';
 
 function App() {
  
@@ -14,6 +15,8 @@ function App() {
   return (
     
     <Router>
+         {/* Add the SmartsuppChat component here */}
+         <SmartsuppChat />
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* All routes inside the layout will inherit the background and navbar */}

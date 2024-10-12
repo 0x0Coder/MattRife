@@ -83,7 +83,27 @@ const Donations = () => {
         <AccordionBody>
             <h1 className='grid text-left text-white text-4xl mt-10 '>USDT Donation Instructions</h1>
             <p className='text-white mt-3'>Thank you for your generosity in supporting the #SupportTheLEssPriveledge campaign through Bitcoin donations. To make a donation, please follow these simple steps:</p>
-            <p className='text-white mt-2'>1. Open your Bitcoin wallet.</p>
+            <p className='text-white mt-2'>1. Open your Metamask wallet Address.</p>
+            <p className='text-white'>2. Scan the QR code below or manually enter the wallet address:</p>
+            <h1 className='grid text-white text-left text-2xl font-bold'>USDT Wallet Address:</h1>
+            <p className='text-white text-left grid'>TRAK3zgZnuoYSK6EkaabpfxhJgL77kpipN</p>
+            <h1 className='grid text-left text-white font-bold mt-5 text-xl'>QR Code:</h1>
+            <img src={qrcode2} className='mt-3' />
+            <p className='text-white mt-4'>3. Enter the amount you wish to donate.</p>
+            <p className='text-white mt-2'>4. Double-check the wallet address to ensure it matches the one provided above.</p>
+            <p className='text-white mt-2'>5. Confirm the transaction details and initiate the USDT trc20 transfer.</p>
+            <p className='text-white mt-2'>Your donation will directly support Orphans and less priviledge in Worldwide through the #SupportTheLEssPriveledge campaign.</p>
+            <p className='text-white mt-2'>If you have any questions or need assistance, please don’t hesitate to contact our support team. Your contribution makes a meaningful difference, and we appreciate your support.</p>
+            </AccordionBody>
+      </Accordion>
+      <Accordion open={open === 3}>
+      <AccordionHeader onClick={() => handleOpen(3)} className={`text-white transition-colors ${
+            open === 3 ? "text-customGold hover:!text-customGold" : ""
+          }`}>Donate With Others (Venmo,PayPAl,Zelle)</AccordionHeader>
+        <AccordionBody>
+            <h1 className='grid text-left text-white text-4xl mt-10 '>USDT Donation Instructions</h1>
+            <p className='text-white mt-3'>Thank you for your generosity in supporting the #SupportTheLEssPriveledge campaign through Bitcoin donations. To make a donation, please follow these simple steps:</p>
+            <p className='text-white mt-2'>1. Open your Metamask wallet Address.</p>
             <p className='text-white'>2. Scan the QR code below or manually enter the wallet address:</p>
             <h1 className='grid text-white text-left text-2xl font-bold'>USDT Wallet Address:</h1>
             <p className='text-white text-left grid'>TRAK3zgZnuoYSK6EkaabpfxhJgL77kpipN</p>
