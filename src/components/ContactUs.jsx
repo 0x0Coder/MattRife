@@ -35,7 +35,7 @@ const ContactUs = () => {
       .post("http://localhost:5000/send-email", formData)
       .then((response) => {
         handleOpen();
-        alert("Email sent successfully!");
+        console.log("Email sent successfully!");
       })
       .catch((error) => {
         console.error("Error sending email", error.response.data);
