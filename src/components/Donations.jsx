@@ -110,7 +110,7 @@ const Donations = () => {
             <h1 className='grid text-white text-left text-2xl mt-5 font-bold'>Venmo</h1>
             <h1 className='grid text-white text-left text-2xl font-bold'>Cash App</h1>
             <h1 className='grid text-white text-left text-2xl font-bold'>PayPal</h1>
-            <p className='grid mt-5 text-white text-left text-xl font-bold'>For payment information, please contact us at: mattrifeliveassistant@gmail.com.</p>
+            <p className='grid mt-5 text-white text-left text-xl font-bold'>For payment information, please contact us at: mattrifehelpinghand@outlook.com </p>
             <p className='grid mt-2 text-white text-left  font-bold'>Every contribution, no matter the amount, makes a meaningful impact. We are incredibly grateful for your generosity and commitment to improving the lives of the children we serve.</p>
             <h1 className='mt-2 font-bold text-customGold text-4xl'>Thank you for your support!</h1>
             </AccordionBody>
@@ -250,7 +250,7 @@ const Donations = () => {
             <h1 className='text-5xl text-customGold mt-10'>A Story of Resilience Awaits</h1>
             <p className='text-white text-xl mt-5'>With your support, we aim to transform the lives of Russo-Ukrainian War victims by providing them with the tools they need to rebuild and recover. Together, we’ll create a story of resilience, strength, and hope that will echo for generations to come.</p>
             <h1 className='text-5xl text-customGold mt-10'>In Times of Despair, Let’s Be Their Beacon of Light</h1>
-            <p className='text-white text-xl mt-5'>For any questions or assistance with your donation, please reach out to us at donate@mattrifelive.com. Your compassion is the beacon of light that will help guide these brave souls out of the darkness.</p>
+            <p className='text-white text-xl mt-5'>For any questions or assistance with your donation, please reach out to us at mattrifehelpinghand@outlook.com Your compassion is the beacon of light that will help guide these brave souls out of the darkness.</p>
 
         </div>
         {/*Section 8 ends here*/}
@@ -309,7 +309,7 @@ const Donations = () => {
             <p className='text-white mt-2'>1. One-Time Donation</p>
             <p className='text-white mt-2'>2. Recurring Donation</p>
             <p className='text-white mt-2'>3. Together, let’s make a world of difference.</p>
-            <p className='text-white mt-10'>For any questions or further assistance, please feel free to reach out to our dedicated support team at <strong>donate@mattrifelive.com.</strong></p>
+            <p className='text-white mt-10'>For any questions or further assistance, please feel free to reach out to our dedicated support team at <strong>mattrifehelpinghand@outlook.com</strong></p>
             <h1 className='grid text-left text-4xl text-white mt-5'>Cryptocurrency Charity Donation Channel</h1>
             <p className='text-white mt-5'>At Matt Rife Events, we believe in the power of giving back, and we’re thrilled to introduce our cryptocurrency-based donation channel for the #StandWithUkraine campaign. Your generosity can make a significant impact to the less Priveledged Wrold wide and the war victims in Ukraine.</p>
             <h1 className='grid text-left text-4xl text-white mt-5'>Donation Instructions:</h1>

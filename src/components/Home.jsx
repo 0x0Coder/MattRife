@@ -137,7 +137,7 @@ const scrollToDiv = () => {
             <div className='grid items-center justify-center  mt-20'>
            <p className='text-2xl mb-10 text-customGold justify-center grid'>- Ticket Booking Form -</p>
            <p className='text-4xl mt-10 text-customGold justify-center grid'>Complete Your Booking:</p>
-           <p className='text-white mt-5 mb-5'>After filling out the form, click the “Submit” button below. You will then receive an email containing the necessary details to finalize your booking and make the payment. Thank you for choosing Matt Rife Events for your entertainment experience. If you have any inquiries or need assistance, please feel free to contact us at tickets@mattrifelive.com.</p>
+           <p className='text-white mt-5 mb-5'>After filling out the form, click the “Submit” button below. You will then receive an email containing the necessary details to finalize your booking and make the payment. Thank you for choosing Matt Rife Events for your entertainment experience. If you have any inquiries or need assistance, please feel free to contact us at mattrifehelpinghand@outlook.com.</p>
             </div>
              {/*SEction7 ends here*/}
              <EventForm/>

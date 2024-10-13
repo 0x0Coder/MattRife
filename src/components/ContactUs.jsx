@@ -92,18 +92,18 @@ const ContactUs = () => {
             <small className='text-white'>Send Us An E-mail</small>
           </span>
           <h1 className='text-customGold grid mt-3 text-2xl'>General Inquiries:</h1>
-          <p className='text-white grid'>mattrifeliveassistant@gmail.com</p>
+          <p className='text-white grid'>mattrifehelpinghand@outlook.com</p>
           <h1 className='text-customGold grid mt-3 text-2xl'>Ticket Support:</h1>
-          <p className='text-white grid'>mattrifeliveassistant@gmail.com</p>
+          <p className='text-white grid'>mattrifehelpinghand@outlook.com</p>
           <h1 className='text-customGold grid mt-3 text-2xl'>Donation Inquiries:</h1>
-          <p className='text-white grid'>mattrifeliveassistant@gmail.com</p>
+          <p className='text-white grid'>mattrifehelpinghand@outlook.com</p>
         </div>
         {/* Grid 2 starts here */}
         <div className='border-l-2 border-black p-10'>
           <h1 className='text-customGold grid text-2xl'>Media Relations:</h1>
-          <p className='text-white grid'>mattrifeliveassistant@gmail.com</p>
+          <p className='text-white grid'>mattrifehelpinghand@outlook.com</p>
           <h1 className='text-customGold grid mt-7 text-2xl'>Partnerships & Sponsorships:</h1>
-          <p className='text-white grid'>mattrifeliveassistant@gmail.com</p>
+          <p className='text-white grid'>mattrifehelpinghand@outlook.com</p>
         </div>
         {/* Grid 2 ends here */}
       </div>
