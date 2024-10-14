@@ -1,46 +1,121 @@
-import React from 'react'
-import { Input, Button } from "@material-tailwind/react";
+import React, { useState } from 'react';
+import {
+  Input,
+  Button,
+  Dialog,
+  DialogHeader,
+  DialogBody,
+  DialogFooter,
+  Typography,
+} from "@material-tailwind/react";
+import axios from 'axios';
 
 const NewsLetter = () => {
-    const [email, setEmail] = React.useState("");
-    const onChange = ({ target }) => setEmail(target.value);
+  const [open, setOpen] = useState(false);
 
+  // Modal open state
+  const handleOpen = () => setOpen(!open);
+
+  const [formData, setFormData] = useState({
+    email: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(formData.email); // Or use console.log to see the value
+    axios
+      .post("http://localhost:5000/send-newsletter", formData)
+      .then((response) => {
+        handleOpen();
+        console.log("Email sent successfully!", formData);
+      })
+      .catch((error) => {
+        console.error("Error sending email", error.response?.data);
+      });
+  };
 
   return (
-    <div className='mt-10 h-[500px] bg-black w-auto'>
+    <>
+      {/* Modal */}
+      <Dialog open={open} handler={handleOpen}>
+        <DialogHeader>
+          <Typography variant="h5" color="blue-gray">
+            Mail Sent!
+          </Typography>
+        </DialogHeader>
+        <DialogBody divider className="grid place-items-center gap-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="h-16 w-16 text-green-500"
+          >
+            <path
+              fillRule="evenodd"
+              d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <Typography color="green" variant="h4">
+            Mail successfully Sent
+          </Typography>
+          <Typography className="text-center font-normal">
+            Your Request has been received and is being processed by the foundation
+          </Typography>
+        </DialogBody>
+        <DialogFooter className="space-x-2">
+          <Button variant="text" color="blue-gray" onClick={handleOpen}>
+            Close
+          </Button>
+          <Button variant="gradient" onClick={handleOpen}>
+            Ok, Got it
+          </Button>
+        </DialogFooter>
+      </Dialog>
+
+      <div className='mt-10 h-[500px] bg-black w-auto'>
         <div className='grid text-center p-6'>
-            <p className='text-xl mt-10  text-customGold'>STAY UPDATED!</p>
-            <h1 className='text-4xl mt-5'>Join the Matt Rife Events Newsletter!</h1>
-            <p className='text-xl mt-5  text-customGold'>Stay in the know with the latest updates, exclusive offers, and event announcements. Subscribe now for all the exciting details delivered to your inbox. Don’t miss out, sign up today!</p>
-                        
-                        <div className='flex justify-center items-center mt-10'>  
-                            <div className=" relative  w-full max-w-[24rem]">
-                    <Input
-                        type="email"
-                        label="Email Address"
-                        value={email}
-                        color='white'
-                        onChange={onChange}
-                        className="pr-20 "
-                        containerProps={{
-                        className: "min-w-0",
-                        }}
-                    />
-                    <Button
-                        size="sm"
-                        color={email ? "gray" : "blue-gray"}
-                        disabled={!email}
-                        className="!absolute right-1 top-1 rounded"
-                    >
-                        Subscribe
-                    </Button>
-                    </div>
-                    </div>
-    
+          <p className='text-xl mt-10 text-customGold'>STAY UPDATED!</p>
+          <h1 className='text-4xl mt-5'>Join the Matt Rife Events Newsletter!</h1>
+          <p className='text-xl mt-5 text-customGold'>
+            Stay in the know with the latest updates, exclusive offers, and event announcements.
+            Subscribe now for all the exciting details delivered to your inbox. Don’t miss out, sign up today!
+          </p>
+          <div className='flex justify-center items-center mt-10'>
+            <div className="relative w-full max-w-[24rem]">
+              <form onSubmit={handleSubmit}>
+                <Input
+                  type="email"
+                  label="Email Address"
+                  name="email"  // Add name to ensure correct form binding
+                  value={formData.email}
+                  color='white'
+                  onChange={handleChange}
+                  className="pr-20"
+                  containerProps={{
+                    className: "min-w-0",
+                  }}
+                />
+                <Button
+                  size="sm"
+                  color={formData.email ? "gray" : "blue-gray"}
+                  type='submit'
+                  className="!absolute right-1 top-1 rounded"
+                >
+                  Subscribe
+                </Button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default NewsLetter
+export default NewsLetter;
