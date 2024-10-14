@@ -110,7 +110,7 @@ const Donations = () => {
             <h1 className='grid text-white text-left text-2xl mt-5 font-bold'>Venmo</h1>
             <h1 className='grid text-white text-left text-2xl font-bold'>Cash App</h1>
             <h1 className='grid text-white text-left text-2xl font-bold'>PayPal</h1>
-            <p className='grid mt-5 text-white text-left text-xl font-bold'>For payment information, please contact us at: mattrifehelpinghand@outlook.com </p>
+            <p className='grid mt-5 text-white text-left text-xl font-bold'>For payment details, just hit the live chat icon below to talk with us directly! </p>
             <p className='grid mt-2 text-white text-left  font-bold'>Every contribution, no matter the amount, makes a meaningful impact. We are incredibly grateful for your generosity and commitment to improving the lives of the children we serve.</p>
             <h1 className='mt-2 font-bold text-customGold text-4xl'>Thank you for your support!</h1>
             </AccordionBody>
