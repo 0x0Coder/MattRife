@@ -43,7 +43,7 @@ const EventForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://backend-ch0xc6l44-0x0coders-projects.vercel.app/send-bookingemail", formData)
+      .post("http://localhost:5000/send-bookingemail", formData)
       .then((response) => {
         handleOpen("sm");
         console.log("Email sent successfully!");
