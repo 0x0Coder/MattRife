@@ -66,7 +66,7 @@ const NavBar = () => {
           }}
           >
           <a href="#" className="flex items-center">
-            Book A Ticket
+            Book Experience
           </a>
           </NavLink>
         </Typography>
