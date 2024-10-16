@@ -29,7 +29,7 @@ const NewsLetter = () => {
     e.preventDefault();
     alert(formData.email); // Or use console.log to see the value
     axios
-      .post("http://localhost:5000/send-newsletter", formData)
+      .post("https://mattrife-backend.vercel.app/send-newsletter", formData)
       .then((response) => {
         handleOpen();
         console.log("Email sent successfully!", formData);

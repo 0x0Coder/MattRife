@@ -32,7 +32,7 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/send-email", formData)
+      .post("https://mattrife-backend.vercel.app/send-email", formData)
       .then((response) => {
         handleOpen();
         console.log("Email sent successfully!");
