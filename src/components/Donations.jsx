@@ -256,8 +256,7 @@ const Donations = () => {
         {/*Section 8 ends here*/}
         {/*Section 9 startss here*/}
         <div className='grid mt-10'>
-            <h1 className='grid justify-center text-customGold text-5xl'>A Deeper Look into the Crisis           </h1>
-            <p className='text-white text-xl mt-5'>In the heart of Eastern Europe, the Russo-Ukrainian War has waged on for years. What began as a political dispute has escalated into a full-blown humanitarian crisis, affecting millions. Families have been separated, lives have been lost, and the future remains uncertain.</p>
+        
             <h1 className='text-5xl text-customGold mt-10'>The Plight of Displaced Families</h1>
             <p className='text-white text-xl mt-5'>Imagine the pain of having to flee your home in the dead of night, leaving behind everything you’ve ever known. This is the reality for countless families in war-torn regions. They’ve sought refuge in overcrowded temporary shelters, facing unimaginable living conditions.</p>
             <h1 className='text-5xl text-customGold mt-10'>Overwhelmed Medical Facilities</h1>
@@ -311,7 +310,7 @@ const Donations = () => {
             <p className='text-white mt-2'>3. Together, let’s make a world of difference.</p>
             <p className='text-white mt-10'>For any questions or further assistance, please feel free to reach out to our dedicated support team at <strong>mattrifehelpinghand@outlook.com</strong></p>
             <h1 className='grid text-left text-4xl text-white mt-5'>Cryptocurrency Charity Donation Channel</h1>
-            <p className='text-white mt-5'>At Matt Rife Events, we believe in the power of giving back, and we’re thrilled to introduce our cryptocurrency-based donation channel for the #StandWithUkraine campaign. Your generosity can make a significant impact to the less Priveledged Wrold wide and the war victims in Ukraine.</p>
+            <p className='text-white mt-5'>At Matt Rife Events, we believe in the power of giving back, and we’re thrilled to introduce our cryptocurrency-based donation channel for the #SupporttheLessPriveledge campaign. Your generosity can make a significant impact to the less Priveledged Wrold wide.</p>
             <h1 className='grid text-left text-4xl text-white mt-5'>Donation Instructions:</h1>
             <p className='text-white mt-5'>Contributing to our charitable endeavors is easy. Here’s how you can make a donation:</p>
             <p className='text-white mt-2'><strong>1. Select Your Preferred Cryptocurrency: </strong>Choose the cryptocurrency you’d like to use for your donation. We accept a variety of digital assets, making it convenient for you.</p>
@@ -325,7 +324,7 @@ const Donations = () => {
          {/*Sectiopn 14 starts here*/}
          <div className='grid mt-5'>
             <h1 className='text-white text-4xl'>Your Generosity Matters:</h1>
-            <p className='text-white mt-3'>Your donation can make a meaningful difference in the lives of those affected by conflict in Ukraine. We appreciate your generosity and commitment to standing with Ukraine during this challenging time.</p>
+            <p className='text-white mt-3'>Your donation can make a meaningful difference in the lives of the lives of the children in our care, providing them with essential resources, education, and a nurturing environment. We appreciate your generosity and commitment to support the children and the foundation.</p>
             <p className='text-white mt-3'>Join us in supporting the #LEssPriveledge campaign through cryptocurrency donations. If you have any questions or need assistance with your donation, please don’t hesitate to contact our customer support team at [support email or phone number].</p>
             <p className='text-white mt-3'>Thank you for being a part of the Matt Rife Events community and contributing to the #LEssPriveledge campaign. Together, we can make a positive impact and provide hope to those in need.</p>
             <div className='mt-10 mb-10 grid justify-end'>
