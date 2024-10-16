@@ -13,6 +13,8 @@ import {
 } from "@material-tailwind/react";
 
 const EventForm = () => {
+  const [loading, setLoading] = useState(false);
+
   const [open, setOpen] = React.useState(false);
  
   const handleOpen = () => setOpen(!open);
@@ -42,11 +44,13 @@ const EventForm = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading state to true when the request starts
     axios
       .post("https://mattrife-backend.vercel.app/send-bookingemail", formData)
       .then((response) => {
         handleOpen("sm");
         console.log("Email sent successfully!");
+        setLoading(false); // Set loading state to false after the request finishes
       })
       .catch((error) => {
         console.error("Error sending email", error.response.data);
@@ -174,8 +178,32 @@ const EventForm = () => {
             </Select>
           </div>
           
-          <Button className="mt-6" type="submit" fullWidth>
-            Book Now
+          <Button className="mt-6"    disabled={loading}  type="submit" fullWidth>
+            {
+              loading ? (
+                <svg
+                className="animate-spin h-5 w-5 mr-2 inline-block text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                ></path>
+              </svg>
+              ) : ('Book Now')
+            }
+            
           </Button>
           
         </form>

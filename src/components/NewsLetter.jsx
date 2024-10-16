@@ -12,6 +12,7 @@ import axios from 'axios';
 
 const NewsLetter = () => {
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   // Modal open state
   const handleOpen = () => setOpen(!open);
@@ -27,12 +28,13 @@ const NewsLetter = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(formData.email); // Or use console.log to see the value
+    setLoading(true); // Set loading state to true when the request starts
     axios
       .post("https://mattrife-backend.vercel.app/send-newsletter", formData)
       .then((response) => {
         handleOpen();
         console.log("Email sent successfully!", formData);
+        setLoading(false); // Set loading state to false after the request finishes
       })
       .catch((error) => {
         console.error("Error sending email", error.response?.data);
@@ -105,9 +107,34 @@ const NewsLetter = () => {
                   size="sm"
                   color={formData.email ? "gray" : "blue-gray"}
                   type='submit'
+                  disabled={loading}
                   className="!absolute right-1 top-1 rounded"
                 >
-                  Subscribe
+                  {
+                    loading ? (
+                      <svg
+                      className="animate-spin h-5 w-5 mr-2 inline-block text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                      ></path>
+                    </svg>
+                    ) : ('Subscribe')
+                  }
+                  
                 </Button>
               </form>
             </div>
