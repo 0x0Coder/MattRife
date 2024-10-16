@@ -43,7 +43,7 @@ const EventForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://mattrife-backend-72amhg0qw-0x0coders-projects.vercel.app/send-bookingemail", formData)
+      .post("https://mattrife-backend.vercel.app/send-bookingemail", formData)
       .then((response) => {
         handleOpen("sm");
         console.log("Email sent successfully!");
