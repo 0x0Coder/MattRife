@@ -95,7 +95,7 @@ const Events = () => {
             {/*SEction5 ends here*/}
                   {/*new SEction starts here*/}
                   <div className='grid items-center justify-center  mt-20'>
-            <h1 className='text-4xl text-customGold justify-center grid'>Select Your Premier Package </h1>
+            <h1 className='text-4xl text-customGold justify-center grid'>Select Your Premier Experience </h1>
             <h1 className='text-2xl mt-10 text-customGold'>1. Basic Package</h1>
             <p className=' mt-3 text-white justify-center items-center grid'>Entry to the Meet & Greet event Autographed memorabilia from Matt Exclusive online comedy workshop with Matt Digital download of the event highlights Perfect for newcomers eager to taste the excitement at an exceptional value.  </p>
             <h1 className='text-2xl mt-10 text-customGold'>2. Bronze Package</h1>
