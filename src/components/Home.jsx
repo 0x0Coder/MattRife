@@ -65,25 +65,60 @@ const scrollToDiv = () => {
                 {/*grid 1*/}
                 <div>
                 
-                <h1 className='text-4xl text-customGold'>Oct 20 • 5:00pm</h1>
+                <h1 className='text-4xl text-customGold'>Dec 26, 27, 29, 30  • 5:00pm</h1>
                 <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
-                <p>Fox Performing Arts Center, Riverside, CA</p>
+                <p>The Chicago Theatre - Chicago, Illinois</p>
                 </div>
                 {/*grid 1*/}
                 {/*grid 2*/}
                 <div>
-                <h1 className='text-4xl text-customGold'>Nov 1 • 5:00pm</h1>
+                <h1 className='text-4xl text-customGold'>Mar 08 2025  • 5:00pm</h1>
                 <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
-                <p>Fox Performing Arts Center, Riverside, CA</p>
+                <p>American Airlines Center - Dallas Texas </p>
                 </div>
                 {/*grid 2*/}
                 {/*grid 3*/}
                 <div>
-                <h1 className='text-4xl text-customGold'>Dec 1 • 5:00pm</h1>
+                <h1 className='text-4xl text-customGold'>Mar 09 2025 • 5:00pm</h1>
                 <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
-                <p>Fox Performing Arts Center, Riverside, CA</p>
+                <p>Toyota Center - Houston, Texas</p>
                 </div>
                   {/*grid 3*/}
+                   {/*grid 4*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Mar 22 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>PPG Paints Arena - Pittsburgh, Pennsylvania</p>
+                </div>
+                  {/*grid 4*/}
+                      {/*grid 5*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Mar 23 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Target Center - Minneapolis, Minnesota</p>
+                </div>
+                  {/*grid 5*/}
+                                        {/*grid 6*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Apr 12 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Save Mart Center - Fresno, California</p>
+                </div>
+                  {/*grid 6*/}
+                                             {/*grid 7*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Apr 13 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Viejas Arena - San Diego, California</p>
+                </div>
+                  {/*grid 7*/}
+                                                 {/*grid 8*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>May 04 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Red Rocks Amphitheatre - Morrison, Colorado</p>
+                </div>
+                  {/*grid 8*/}
               </div>
               <div className='text-center mt-10'>
               <Button variant="outlined" onClick={scrollToDiv} className=' hover:bg-white hover:text-secondary text-white'>Book Event</Button>
@@ -178,7 +213,7 @@ const scrollToDiv = () => {
                   <p className='mt-5'>Don’t be left out of the comedy revolution. Book your tickets today and secure your spot in the audience. Remember, laughter knows no borders, and Matt Rife is ready to prove it!</p>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                   <h1 className='mt-5 text-2xl'>Tour Dates:</h1>
-                  <p className='mt-5'>Ongoing till December 2024</p>
+                  <p className='mt-5'>Ongoing till December 2025</p>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                   <h1 className='mt-5 text-2xl'>Venues:</h1>
                   <p className='mt-5'>Across USA, Australia, Canada, and Europe</p>
