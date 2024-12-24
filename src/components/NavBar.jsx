@@ -167,7 +167,7 @@ const NavBar = () => {
   
   return (
     <Navbar className="mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 bg-secondary text-white">
-    <div className="container mx-auto flex items-center justify-between ">
+    <div className="container mx-auto grid items-center justify-between ">
  
       <img src={logo} className='w-28'/>
       <div className="hidden lg:block ">{navList}</div>

@@ -157,10 +157,10 @@ const scrollToDiv = () => {
                   <p className='text-customGold text-2xl'>Tours</p>
                 </div>
                 <div>
-                  <p className='text-5xl'>ProbleMATTIC World Tour</p>
+                  <p className='text-5xl'>Stay Golden Tour</p>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
-                  <h1 className='mt-10 text-customGold text-3xl'>Introducing the ProbleMATTIC World Tour: Where Comedy Meets the Globe!</h1>
-                  <p className='mt-4'>Are you ready to embark on an uproarious journey that spans across continents? The “ProbleMATTIC World Tour” is here to sweep you off your feet, and it’s a laugh riot that’s taking the world by storm!</p>
+                  <h1 className='mt-10 text-customGold text-3xl'>Introducing the Stay Golden Tour: Where Comedy Meets the Globe!</h1>
+                  <p className='mt-4'>Are you ready to embark on an uproarious journey that spans across continents? The “Stay Golden Tour” is here to sweep you off your feet, and it’s a laugh riot that’s taking the world by storm!</p>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                   <h1 className='mt-5 text-2xl'>A Hilarious Odyssey:</h1>
                   <p className='mt-5'>Join the incomparable comedy maestro, Matt Rife, on a whirlwind adventure that’s making audiences double over with laughter. From the heart of the USA to the vibrant stages of Australia, the chic venues of Canada, and the cultural hubs of Europe, Matt is leaving no stone unturned on his quest to spread unadulterated comedy joy.</p>
@@ -169,10 +169,10 @@ const scrollToDiv = () => {
                   <p className='mt-5'>With most venues already sold out, securing your ticket is a race against time! Don’t miss this chance to witness the comedy event of a lifetime. Matt Rife’s sharp wit, relatable humor, and charismatic stage presence are a comedic concoction that will leave you in splits.</p>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                   <h1 className='mt-5 text-2xl'>A Journey to Remember:</h1>
-                  <p className='mt-5'>The “ProbleMATTIC World Tour” is not just an event; it’s an experience. Mark your calendars and gather your friends for an evening of unbridled hilarity that will leave you smiling long after the curtain falls. From side-splitting stand-up to heartwarming anecdotes, Matt Rife will take you on an emotional rollercoaster.</p>
+                  <p className='mt-5'>The “Stay Golden Tour” is not just an event; it’s an experience. Mark your calendars and gather your friends for an evening of unbridled hilarity that will leave you smiling long after the curtain falls. From side-splitting stand-up to heartwarming anecdotes, Matt Rife will take you on an emotional rollercoaster.</p>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                   <h1 className='mt-5 text-2xl'>Join the Laughter Movement: </h1>
-                  <p className='mt-5'>Come be a part of this international laughter movement. Whether you’re a comedy connoisseur or just looking for a fantastic night out, the “ProbleMATTIC World Tour” promises to deliver an unforgettable experience.</p>
+                  <p className='mt-5'>Come be a part of this international laughter movement. Whether you’re a comedy connoisseur or just looking for a fantastic night out, the “Stay Golden Tour” promises to deliver an unforgettable experience.</p>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                   <h1 className='mt-5 text-2xl'>Book Your Seats Now:</h1>
                   <p className='mt-5'>Don’t be left out of the comedy revolution. Book your tickets today and secure your spot in the audience. Remember, laughter knows no borders, and Matt Rife is ready to prove it!</p>
@@ -182,7 +182,7 @@ const scrollToDiv = () => {
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                   <h1 className='mt-5 text-2xl'>Venues:</h1>
                   <p className='mt-5'>Across USA, Australia, Canada, and Europe</p>
-<p className='mt-5'>Join us for an evening of unparalleled humor, camaraderie, and unscripted fun. The ProbleMATTIC World Tour is your ticket to a world of laughter, so grab it with both hands!</p>
+<p className='mt-5'>Join us for an evening of unparalleled humor, camaraderie, and unscripted fun. The Stay Golden Tour is your ticket to a world of laughter, so grab it with both hands!</p>
                  
                 </div>
 
@@ -196,11 +196,11 @@ const scrollToDiv = () => {
               </div>
               <div>
                 <h1 className='text-customGold'>Get Your Tickets Today!</h1>
-                <h1 className='text-5xl'>Join us for the Laughter-Loaded 'ProbleMATTIC World Tour</h1>
+                <h1 className='text-5xl'>Join us for the Laughter-Loaded 'Stay Golden Tour</h1>
                 <hr className='border-0 h-[1px] bg-black mt-5'></hr>
                 <div className='grid grid-cols-2 mt-5 p-3 '>
                   <div>
-                    <p className='p-4'>Get ready to laugh out loud! Join us for the “ProbleMATTIC World Tour” and secure your tickets now.</p>
+                    <p className='p-4'>Get ready to laugh out loud! Join us for the “Stay Golden Tour” and secure your tickets now.</p>
                   </div>
                   <div className='border-l-2 border-black'>
                     <p className='p-4 text-3xl'>2023/
