@@ -84,6 +84,7 @@ const scrollToDiv = () => {
                 <p>Toyota Center - Houston, Texas</p>
                 </div>
                   {/*grid 3*/}
+                  <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                    {/*grid 4*/}
                 <div>
                 <h1 className='text-4xl text-customGold'>Mar 22 2025 • 5:00pm</h1>
@@ -105,6 +106,7 @@ const scrollToDiv = () => {
                 <p>Save Mart Center - Fresno, California</p>
                 </div>
                   {/*grid 6*/}
+                  <hr className='border-0 h-[1px] bg-black mt-10'></hr>
                                              {/*grid 7*/}
                 <div>
                 <h1 className='text-4xl text-customGold'>Apr 13 2025 • 5:00pm</h1>
@@ -119,6 +121,7 @@ const scrollToDiv = () => {
                 <p>Red Rocks Amphitheatre - Morrison, Colorado</p>
                 </div>
                   {/*grid 8*/}
+              
               </div>
               <div className='text-center mt-10'>
               <Button variant="outlined" onClick={scrollToDiv} className=' hover:bg-white hover:text-secondary text-white'>Book Event</Button>
