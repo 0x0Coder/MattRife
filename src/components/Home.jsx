@@ -84,7 +84,9 @@ const scrollToDiv = () => {
                 <p>Toyota Center - Houston, Texas</p>
                 </div>
                   {/*grid 3*/}
+                  </div>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+                  <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
                    {/*grid 4*/}
                 <div>
                 <h1 className='text-4xl text-customGold'>Mar 22 2025 • 5:00pm</h1>
@@ -106,7 +108,9 @@ const scrollToDiv = () => {
                 <p>Save Mart Center - Fresno, California</p>
                 </div>
                   {/*grid 6*/}
+                  </div>
                   <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+                  <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
                                              {/*grid 7*/}
                 <div>
                 <h1 className='text-4xl text-customGold'>Apr 13 2025 • 5:00pm</h1>
@@ -121,8 +125,39 @@ const scrollToDiv = () => {
                 <p>Red Rocks Amphitheatre - Morrison, Colorado</p>
                 </div>
                   {/*grid 8*/}
-              
+                                                   {/*grid 9*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>May 17 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>SNHU Arena - Manchester, New Hampshire</p>
+                </div>
+                  {/*grid 9*/}
               </div>
+              <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 10*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jun 07 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>CHI Health Center - Omaha, Nebraska                </p>
+                </div>
+                  {/*grid 10*/}
+                                                 {/*grid 11*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jun 08 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Wells Fargo Arena - Des Moines, Iowa</p>
+                </div>
+                  {/*grid 11*/}
+                                                   {/*grid 12*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jun 21 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>North Charleston Coliseum - North Charleston, South Carolina</p>
+                </div>
+                  {/*grid 12*/}
+              </div>
+              <hr className='border-0 h-[1px] bg-black mt-10'></hr>
               <div className='text-center mt-10'>
               <Button variant="outlined" onClick={scrollToDiv} className=' hover:bg-white hover:text-secondary text-white'>Book Event</Button>
               </div>
