@@ -158,6 +158,182 @@ const scrollToDiv = () => {
                   {/*grid 12*/}
               </div>
               <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 13*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jun 22 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Coca-Cola Amphitheater - Birmingham, Alabama               </p>
+                </div>
+                  {/*grid 13*/}
+                                                 {/*grid 14*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jul 05 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p> Neal S. Blaisdell Arena - Honolulu, Hawaii</p>
+                </div>
+                  {/*grid 14*/}
+                                                   {/*grid 15*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jul 12 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Maine Savings Amphitheater - Bangor, Maine</p>
+                </div>
+                  {/*grid 15*/}
+              </div>
+              <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 16*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jul 13 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Centre Bell - Montreal, Canada             </p>
+                </div>
+                  {/*grid 16*/}
+                                                 {/*grid 17*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jul 18 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p> Madison Square Garden - New York, New York</p>
+                </div>
+                  {/*grid 17*/}
+                                                   {/*grid 18*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Jul 19 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Madison Square Garden - New York, New York</p>
+                </div>
+                  {/*grid 18*/}
+              </div>
+              <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 19*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 7 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Garrison Grounds - Halifax, Canada             </p>
+                </div>
+                  {/*grid 19*/}
+                                                 {/*grid 20*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 8 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p> Garrison Grounds - Halifax, Canada  </p>
+                </div>
+                  {/*grid 20*/}
+                                                   {/*grid 21*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 9 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Nationwide Arena - Columbus, Ohio</p>
+                </div>
+                  {/*grid 21*/}
+              </div>
+               <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 19*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 7 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Garrison Grounds - Halifax, Canada             </p>
+                </div>
+                  {/*grid 19*/}
+                                                 {/*grid 20*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 8 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p> Garrison Grounds - Halifax, Canada  </p>
+                </div>
+                  {/*grid 20*/}
+                                                   {/*grid 21*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 9 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Nationwide Arena - Columbus, Ohio</p>
+                </div>
+                  {/*grid 21*/}
+              </div>
+              <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 22*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 10 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Rocket Mortgage FieldHouse - Cleveland, Ohio         </p>
+                </div>
+                  {/*grid 22*/}
+                                                 {/*grid 23*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 23 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p> Hayden Homes Amphitheater - Bend, Oregon  </p>
+                </div>
+                  {/*grid 23*/}
+                                                   {/*grid 24*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Aug 24 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Climate Pledge Arena - Seattle, Washington</p>
+                </div>
+                  {/*grid 24*/}
+              </div>
+              <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 25*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Sep 13 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>T-Mobile Center  - Kansas City, Missouri       </p>
+                </div>
+                  {/*grid 25*/}
+                                                 {/*grid 26*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Sep 14 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p> Enterprise Center - St. Louis, Missouri  </p>
+                </div>
+                  {/*grid 26*/}
+                                                   {/*grid 27*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Sep 27 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>ACL Live - Austin,Texas
+                </p>
+                </div>
+                  {/*grid 27*/}
+              </div>
+              <hr className='border-0 h-[1px] bg-black mt-10'></hr>
+              
+              <div className="grid lg:grid-cols-3  gap-4 mt-[30px]">
+                                             {/*grid 28*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Oct 19 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Shoreline Amphitheatre - Mountain View, California       </p>
+                </div>
+                  {/*grid 28*/}
+                                                 {/*grid 26*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Nov 08 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p> Little Caesars Arena - Detroit, Michigan  </p>
+                </div>
+                  {/*grid 26*/}
+                                                   {/*grid 24*/}
+                <div>
+                <h1 className='text-4xl text-customGold'>Dec 18 2025 • 5:00pm</h1>
+                <p className='text-2xl mt-2'>Matt Rife (21+ Event)</p>
+                <p>Comedy Connection  - East Providence, Rhode Island
+                </p>
+                </div>
+                  {/*grid 24*/}
+              </div>
               <div className='text-center mt-10'>
               <Button variant="outlined" onClick={scrollToDiv} className=' hover:bg-white hover:text-secondary text-white'>Book Event</Button>
               </div>
