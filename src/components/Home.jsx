@@ -2,11 +2,11 @@ import React from 'react'
 import { Button } from "@material-tailwind/react";
 import  { useRef } from "react";
 import Header from './Header'
-import Banner from '/mrpoo.jpg'
+import Banner from '/header-matt2.jpg'
 import IMG1 from '/mrrrr1.jpg'
 import IMG2 from '/mrrrr111.jpg'
 import IMG3 from '/mrrrr1144.jpg'
-import IMG4 from '/mini.jpg'
+import IMG4 from '/header-matt2.jpg'
 import IMG5 from '/p22.jpeg'
 import EventForm from './EventForm';
 import EventPackages from './EventPackages';
