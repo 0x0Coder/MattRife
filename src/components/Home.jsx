@@ -171,8 +171,8 @@ const scrollToDiv = () => {
                     <p className='p-4'>Get ready to laugh out loud! Join us for the “Stay Golden Tour” and secure your tickets now.</p>
                   </div>
                   <div className='border-l-2 border-black'>
-                    <p className='p-4 text-3xl'>2023/
-                    2024</p>
+                    <p className='p-4 text-3xl'>2025/
+                    2026</p>
                   </div>
 
                 </div>
