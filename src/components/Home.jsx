@@ -59,7 +59,7 @@ const scrollToDiv = () => {
           {/*section 2 ends here*/}
         
             {/*Event packages*/}
-            <h1 className='text-4xl text-customGold justify-center grid mt-5'>Select Your Premier Experience </h1>
+            <h1 className='text-4xl text-customGold justify-center grid mt-5'>Select Your VIP Ticket </h1>
             <EventPackages targetDivRef={targetDivRef} />
           {/*section 4*/}
           <div>
